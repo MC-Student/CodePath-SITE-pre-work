@@ -4,7 +4,7 @@
 
 Submitted by: **Meira Cohen**
 
-Time spent: **4** hours spent in total
+Time spent: **6** hours spent in total
 
 Link to project: https://silky-roasted-snowstorm.glitch.me/
 
