@@ -27,27 +27,33 @@ The following **optional** features are implemented:
 * [X] More than 4 functional game buttons
 * [ ] Playback speeds up on each turn
 * [X] Computer picks a different pattern each time the game is played
-* [ ] Player only loses after 3 mistakes (instead of on the first mistake)
+* [X] Player only loses after 3 mistakes (instead of on the first mistake)
 * [ ] Game button appearance change goes beyond color (e.g. add an image)
 * [ ] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
 * [ ] User has a limited amount of time to enter their guess on each turn
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app!
+- [X] A displayed timer starts when the user presses the start button, and stops when the stop button is pressed, when the user loses, and when the user wins
+- [X] Website includes an HTML home page with a link to navigate to the HTML game page
 
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
 ![](https://i.imgur.com/q2AUxnu.gif)
-![](https://i.imgur.com/yqTiwN0.gif)
+![](https://i.imgur.com/PhIYz7W.gif)
 ![](https://i.imgur.com/Pix82UZ.gif)
 ![](https://i.imgur.com/y1yJR85.gif)
 ![](https://i.imgur.com/meBoqx6.gif)
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
-[YOUR ANSWER HERE]
+https://www.w3schools.com/
+https://stackoverflow.com/
+https://www.foolishdeveloper.com/2021/10/simple-stopwatch-using-javascript.html
+https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/AudioContext
+
+Asked a friend who is NOT applying to SITE quick random coding questions
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
 [YOUR ANSWER HERE]
@@ -67,7 +73,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 ## License
 
-    Copyright [YOUR NAME]
+    Copyright [Meira Cohen]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
