@@ -1,0 +1,82 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font-family: century gothic, arial, sans-serif;
+}
+
+a {
+  color: white;
+}
+
+button {
+  padding: 16px;
+  border-radius: 20px;
+  background: white;
+  color: black;
+  font-family: century gothic, arial, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#gameButtonArea > button {
+  width: 50px;
+  height: 150px;
+  margin: 5px;
+  background: white;
+}
+
+.hidden {
+  display: none;
+}
+
+#button1:active, #button1.lit {
+  background: red;
+}
+#button2:active, #button2.lit {
+  background: darkorange;
+}
+#button3:active, #button3.lit {
+  background: yellow;
+}
+#button4:active, #button4.lit {
+  background: green;
+}
+#button5:active, #button5.lit {
+  background: blue;
+}
+#button6:active, #button6.lit {
+  background: darkturquoise;
+}
+#button7:active, #button7.lit {
+  background: purple;
+}
+#button8:active, #button8.lit {
+  background: pink;
+}
+#button9:active, #button9.lit {
+  background: grey;
+}
+
+
+.timerDisplay{
+    position: relative;
+    width: 20%;
+    background: white;
+    left: 40%;
+    top: 20%; 
+    padding: 10px 0;
+    font-family: 'Roboto mono',monospace;
+    color: #0381bb;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+}
