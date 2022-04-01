@@ -11,6 +11,7 @@ var tonePlaying = false;
 var volume = 0.5;
 var guessCounter = 0;
 var clueHoldTime = 1000; //starting at 1000ms, how long to hold each clue's light/sound
+var strikeCount = 0; // to count strikes
 
 // Page Initialization
 // Init Sound Synthesizer
@@ -125,8 +126,19 @@ function winGame(){
     }
   }
    else{
-    //Incorrect, game over
-    loseGame();
+    //when get one wrong
+     strikeCount++;
+     console.log("user got strike, now up to strike: " + strikeCount);
+     
+     //three strikes and you're out
+     if (strikeCount==3){
+       loseGame();
+     }
+     //otherwise continue the game
+     else{
+      progress++;
+      playClueSequence();
+     }
   }
 }    
 
