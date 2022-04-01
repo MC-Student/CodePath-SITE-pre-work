@@ -11,6 +11,7 @@ var tonePlaying = false;
 var volume = 0.5;
 var guessCounter = 0;
 var clueHoldTime = 1000; //starting at 1000ms, how long to hold each clue's light/sound
+var strikeCount = 0;
 
 // Page Initialization
 // Init Sound Synthesizer
@@ -99,7 +100,7 @@ function winGame(){
 }
 
   
- function guess(btn){
+ /*function guess(btn, strikeCount){
   console.log("user guessed: " + btn);
   
   if(!gamePlaying){
@@ -126,7 +127,60 @@ function winGame(){
   }
    else{
     //Incorrect, game over
-    loseGame();
+     
+      strikeCount++;
+     
+     if (strikeCount==3){
+       loseGame();
+     
+     }
+     
+     else{
+      
+       progress++;
+      playClueSequence();
+     }
+    //loseGame();
+  }
+}    */
+
+function guess(btn){
+  console.log("user guessed: " + btn);
+  
+  if(!gamePlaying){
+    return;
+  }
+  
+  if(pattern[guessCounter] == btn){
+    //Correct
+    if(guessCounter == progress){
+      if(progress == pattern.length - 1){
+        //Game over
+        winGame();
+      }
+      else{
+        //correct, increment guess number
+        progress++;
+        playClueSequence();
+      }
+    }
+    else{
+      //check next guess
+      guessCounter++;
+    }
+  }
+   else{
+    //when get one wrong
+     strikeCount++;
+     //three strikes and you're out
+     if (strikeCount==3){
+       loseGame();
+     }
+     //otherwise continue the game
+     else{
+      progress++;
+      playClueSequence();
+     }
   }
 }    
 
