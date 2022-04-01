@@ -56,19 +56,22 @@ https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/AudioContext
 Asked a friend who is NOT applying to SITE quick random coding questions
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
-[YOUR ANSWER HERE]
+One challenge I encountered in creating this submission was that originally, the portion of the code given to me by the pre-work instructions did not work for me when I ran my code in terms of the audio. Specifically, when the game sequence began to play, the buttons would light up, but the audio for each button did not play, although the frequency map in the JavaScript code was entered correctly. This indicated to me that the problem with the audio was in a different location in the code. In order to check this, I opened the game in a tab instead of looking at just the preview in Glitch, and I used the “inspect → console” tool in Chrome to track the progress of the game, see where the error was occurring, and understand what exactly the error was. After running the game, I checked the console to see what errors arose, and in fact, it indicated an error in regards to the audio and the AudioContext object. When searching through the rest of the code for all of the related lines of code, I noticed a few other places where it was used. I decided to research the Context and audio constructs to better understand what was happening and why there might be an error. After using the Mozilla developers page about audio context, I realized that the audio might not be playing because either resume() was not used, or it was used in the wrong place or format. I went through the code, tried a few different occurrences of resume(), and was able to get the audio to work. Through detailed observation, research, and deduction, I was able to overcome the challenge of the audio not working.
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
+There are many questions I have about web development, so I chose questions for which I would most like to learn the answers. After completing my submission, I am wondering how I can make the styling of a webpage look more professional. I would also like to know how to collect data that can be generated through the use of a website, and how it can be used to improve the webpage. Another question I have is what the best way is to eliminate errors and allow for the use of the webpage across a variety of platforms, such as on a PC or mobile phone, while maintaining an easy-to-use interface. Additionally, I would like to know how JavaScript and other similar languages can be used in the most efficient manner without compromising on achieving all desired functionalities.
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
-
+Some of the many changes I would implement would be as follows:
+First, I would work on making the JavaScript functions easier to follow and more efficient, especially the guess() function. I would create a separate function to generate the random sequence, including both the content of the getRandomInt() function and additional code that would prevent a clue from being used more than once within one sequence.
+I would also like to create three levels of the game, with the playback speed of the clues remaining the same between each turn for the easiest level, but increasing somewhat for the medium level, and increasing dramatically (without losing the playback), for the highest level. Three new buttons would appear once the start button was clicked, and it would only be possible to proceed to the next level once the player has won the game on that level. 
+I would not customize the audio to random sounds or change the appearance of the buttons to images because I think it would ruin the clear and simple UX of the game. I would instead create a more realistic version of a piano, with a standard keyboard appearing in black and white keys, but with the key still changing colors on the user’s click and when the clue sequence is played.
+I would also award the user a star for every correct answer, recorded with a flashing star that would flash every time a star was added, and there would be a number displaying the number of accumulated stars next to the star image. The number would reset for a new attempt, but the previous record for that level would appear as well. A message would appear at the end of each game if the record was beat.
 
 
 ## Interview Recording URL Link
 
-[My 5-minute Interview Recording](your-link-here)
+[My 5-minute Interview Recording](https://www.loom.com/share/16d68ba426e04483b41249ab6515f78e)
 
 
 ## License
